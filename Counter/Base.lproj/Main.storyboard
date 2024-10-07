@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUH-XN-yhe">
-                                <rect key="frame" x="66.666666666666686" y="139" width="259.99999999999994" height="200"/>
+                                <rect key="frame" x="66.666666666666686" y="139" width="260" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="TYe-Rt-4SD"/>
                                     <constraint firstAttribute="height" constant="200" id="sDW-UG-ANm"/>
@@ -30,7 +30,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="Cbt-7c-K0y">
-                                <rect key="frame" x="40.666666666666657" y="429" width="312" height="158.33333333333337"/>
+                                <rect key="frame" x="40.666666666666657" y="429" width="312" height="164"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="DOB-61-gtF">
                                         <rect key="frame" x="0.0" y="0.0" width="312" height="75"/>
@@ -65,20 +65,20 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6b-XY-R3a">
-                                        <rect key="frame" x="105.33333333333334" y="123.99999999999999" width="101" height="34.333333333333329"/>
+                                        <rect key="frame" x="105.33333333333334" y="124" width="101" height="40"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="34.329999999999998" id="kIU-1N-cim"/>
+                                            <constraint firstAttribute="height" constant="40" id="kIU-1N-cim"/>
                                             <constraint firstAttribute="width" constant="101" id="lhg-SY-eaP"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="tinted" title="Обнулить"/>
+                                        <buttonConfiguration key="configuration" style="tinted" image="arrow.counterclockwise" catalog="system"/>
                                         <connections>
                                             <action selector="resetButtonTouched" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yis-If-4Sc"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="158.33000000000001" id="Tq2-v1-AdF"/>
+                                    <constraint firstAttribute="height" constant="164" id="5ap-qS-KRK"/>
                                     <constraint firstAttribute="width" constant="312" id="wS9-to-h66"/>
                                 </constraints>
                             </stackView>
@@ -116,6 +116,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="arrow.counterclockwise" catalog="system" width="110" height="128"/>
         <image name="minus" catalog="system" width="128" height="26"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
@@ -125,7 +126,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
