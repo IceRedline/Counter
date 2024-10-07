@@ -16,18 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUH-XN-yhe">
-                                <rect key="frame" x="46.666666666666657" y="159" width="300" height="181"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUH-XN-yhe">
+                                <rect key="frame" x="66.666666666666686" y="139" width="259.99999999999994" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="TYe-Rt-4SD"/>
-                                    <constraint firstAttribute="height" constant="181" id="sDW-UG-ANm"/>
+                                    <constraint firstAttribute="width" constant="260" id="TYe-Rt-4SD"/>
+                                    <constraint firstAttribute="height" constant="200" id="sDW-UG-ANm"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="75"/>
+                                <string key="text">Значение
+счётчика:
+0</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="Cbt-7c-K0y">
-                                <rect key="frame" x="40.666666666666657" y="430" width="312" height="158.33333333333337"/>
+                                <rect key="frame" x="40.666666666666657" y="429" width="312" height="158.33333333333337"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="DOB-61-gtF">
                                         <rect key="frame" x="0.0" y="0.0" width="312" height="75"/>
@@ -40,6 +43,7 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" image="plus" catalog="system">
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large"/>
                                                     <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                                 </buttonConfiguration>
                                                 <connections>
@@ -94,7 +98,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Cbt-7c-K0y" firstAttribute="top" secondItem="eUH-XN-yhe" secondAttribute="bottom" constant="90" id="Set-Tg-drn"/>
-                            <constraint firstItem="eUH-XN-yhe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="bcz-nm-96C"/>
+                            <constraint firstItem="eUH-XN-yhe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="bcz-nm-96C"/>
                             <constraint firstItem="Cbt-7c-K0y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bpx-Dq-BPt"/>
                             <constraint firstItem="aa9-MB-6mB" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dXN-7r-aJY"/>
                             <constraint firstItem="eUH-XN-yhe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eez-un-ZF2"/>

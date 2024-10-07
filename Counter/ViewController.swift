@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 
     @IBAction func addButtonTouched() {
         touchCount += 1
-        counterLabel.text = String(touchCount)
+        counterLabel.text = "Значение счётчика: \(touchCount)"
         changeHistory += "\(Date().formatted(date: .numeric, time: .standard)): значение изменено на +1 \n"
         changeHistoryView.text = changeHistory
     }
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     @IBAction func decreaseButtonTouched() {
         if touchCount > 0 {
             touchCount -= 1
-            counterLabel.text = String(touchCount)
+            counterLabel.text = "Значение счётчика: \(touchCount)"
             changeHistory += "\(Date().formatted(date: .numeric, time: .standard)): значение изменено на -1 \n"
             changeHistoryView.text = changeHistory
         } else {
@@ -39,7 +39,7 @@ class ViewController: UIViewController {
     }
     @IBAction func resetButtonTouched() {
         touchCount = 0
-        counterLabel.text = String(touchCount)
+        counterLabel.text = "Значение счётчика: \(touchCount)"
         changeHistory += "\(Date().formatted(date: .numeric, time: .standard)): значение сброшено \n"
         changeHistoryView.text = changeHistory
     }
