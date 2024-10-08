@@ -7,26 +7,26 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
-    @IBOutlet weak var counterLabel: UILabel!
-    @IBOutlet weak var changeHistoryView: UITextView!
-    var touchCount: UInt = 0
-    var changeHistory: String = "История изменений: \n"
+    @IBOutlet private weak var counterLabel: UILabel!
+    @IBOutlet private weak var changeHistoryView: UITextView!
+    private var touchCount: UInt = 0
+    private var changeHistory: String = "История изменений: \n"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         changeHistoryView.isEditable = false
     }
 
-    @IBAction func addButtonTouched() {
+    @IBAction private func addButtonTouched() {
         touchCount += 1
         counterLabel.text = "Значение счётчика: \(touchCount)"
         changeHistory += "\(Date().formatted(date: .numeric, time: .standard)): значение изменено на +1 \n"
         changeHistoryView.text = changeHistory
     }
     
-    @IBAction func decreaseButtonTouched() {
+    @IBAction private func decreaseButtonTouched() {
         if touchCount > 0 {
             touchCount -= 1
             counterLabel.text = "Значение счётчика: \(touchCount)"
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
             changeHistoryView.text = changeHistory
         }
     }
-    @IBAction func resetButtonTouched() {
+    @IBAction private func resetButtonTouched() {
         touchCount = 0
         counterLabel.text = "Значение счётчика: \(touchCount)"
         changeHistory += "\(Date().formatted(date: .numeric, time: .standard)): значение сброшено \n"
